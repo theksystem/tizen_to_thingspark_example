@@ -1,0 +1,27 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+ninja_required_version = 1.5
+include rules.ninja
+include target.ninja
+
+shell = cmd /c
+bashshell = d:\tizen-studio\tools\msys2\usr\bin\sh.exe
+builddir = ../Debug
+sareportdir = ../SA_Report
+sa_checkers = cplusplus,core,deadcode,resourceLeak,security,unix
+coveragedir = ../Coverage_Report
+
+subninja ../Debug/src/subdir.ninja
+
+targettool = clang++.exe
+targetflags =  -L"../lib" -target arm-tizen-linux-gnueabi -gcc-toolchain "d:\tizen-studio\tools\smart-build-interface/../arm-linux-gnueabi-gcc-6.2/" -ccc-gcc-name arm-linux-gnueabi-g++ -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mtune=cortex-a8 -Xlinker --as-needed  -pie -lpthread --sysroot="d:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-5.0/iot-headless/rootstraps/iot-headless-5.0-device.core" -Xlinker --version-script="../.exportMap" -L"d:/tizen-studio/tools/smart-build-interface/../../platforms/tizen-5.0/iot-headless/rootstraps/iot-headless-5.0-device.core/usr/lib" -lanl -lappcore-agent -lbase-utils-i18n -lBrokenLocale -lbundle -lcapi-appfw-alarm -lcapi-appfw-app-common -lcapi-appfw-app-control -lcapi-appfw-app-manager -lcapi-appfw-event -lcapi-appfw-package-manager -lcapi-appfw-preference -lcapi-base-common -lcapi-media-player -lcapi-media-sound-manager -lcapi-media-tool -lcapi-network-bluetooth -lcapi-network-connection -lcapi-network-softap -lcapi-network-wifi-manager -lcapi-system-device -lcapi-system-info -lcapi-system-peripheral-io -lcidn -lcrypto -lcrypt -lc -lcurl -ldlog -ldl -lecore -leina -leo -lgio-2.0 -lglib-2.0 -lgmodule-2.0 -lgobject-2.0 -lgthread-2.0 -liotcon -liotjs -ljson-glib-1.0 -lkey-manager-client -lma -lmessage-port -lminizip -lm -lnotification -lnsl -lnss_compat -lnss_dns -lnss_files -lnss_hesiod -lnss_nisplus -lnss_nis -lpthread -lresolv -lrpc-port -lrt -lsqlite3 -lssl -lstorage -ltbm -lthread_db -lttrace -lupdate-control -lutil -lxml2 -lz -Werror-implicit-function-declaration
+
+build things: build_target src/thingpark_api.o src/things.o src/thingspark.o 
+build ast: phony src/thingpark_api.o.ast src/things.o.ast src/thingspark.o.ast
+build externalFnMap.txt: fast_ext_fn src/thingpark_api.o.ast src/things.o.ast src/thingspark.o.ast
+build sa: phony $sareportdir/src/thingpark_api.o.xml $sareportdir/src/things.o.xml $sareportdir/src/thingspark.o.xml
+build apichecker: unusedapi_rule src/thingpark_api.o.txt src/things.o.txt src/thingspark.o.txt
+build cov: cov_report $coveragedir/src/thingpark_api.o.cov $coveragedir/src/things.o.cov $coveragedir/src/thingspark.o.cov
+

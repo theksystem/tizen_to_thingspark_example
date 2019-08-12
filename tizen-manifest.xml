@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="5.0" package="com.theksystem.thingspark" version="1.0.0">
+    <profile name="iot-headless"/>
+    <service-application appid="com.theksystem.thingspark" exec="things" multiple="false" nodisplay="true" taskmanage="false" type="capp">
+        <label>thingspark</label>
+        <icon>things.png</icon>
+    </service-application>
+</manifest>

@@ -1,0 +1,6 @@
+set sysroot d:\tizen-studio\platforms\tizen-5.0\iot-headless\rootstraps\iot-headless-5.0-device.core
+set debug-file-directory d:\tizen-studio\platforms\tizen-5.0\iot-headless\rootstraps\iot-headless-5.0-device.core\usr\lib\debug
+set solib-search-path D:\tizenProjects\tizen_to_thingspark_example\Debug
+dir d:\tizen-studio\platforms\tizen-5.0\iot-headless\rootstraps\iot-headless-5.0-device.core\usr\src\debug
+file "D:\tizenProjects\tizen_to_thingspark_example\Debug\things"
+sharedlibrary
