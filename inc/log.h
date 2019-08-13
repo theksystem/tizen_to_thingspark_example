@@ -6,7 +6,7 @@
 #ifdef  LOG_TAG
 #undef  LOG_TAG
 #endif
-#define LOG_TAG "THEKSYSTEM"
+#define LOG_TAG "THINGSPARK"
 
 #if !defined(_D)
 #define _D(fmt, arg...) dlog_print(DLOG_DEBUG, LOG_TAG, "[%s:%d] " fmt "\n", __func__, __LINE__, ##arg)
