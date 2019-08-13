@@ -90,7 +90,7 @@ int tp_set_field_value(tp_handle_h handle, int field, const char *value) {
 
 	handle->value[field - 1] = strdup(value);
 	_D("handle->value[field - 1] = %s", handle->value[field - 1]);
-	retv_if(!(handle->value[field - 1]), -1);
+	retv_if(!handle->value[field - 1], -1);
 
 	return 0;
 }
