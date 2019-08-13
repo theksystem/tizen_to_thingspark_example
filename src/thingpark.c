@@ -15,14 +15,10 @@
 #include <curl/curl.h>
 
 #include "log.h"
-#include "thingspark_api.h"
+#include "thingspark.h"
 
 #define TRUE 1
 #define MAXIMUM_FIELD 10
-
-// the URL structure to update ThingsPark
-// https://api.thingspark.co.kr/update?api_key=YOUR_CHANNEL_API_KEY&field1=7
-//char *URLtemplate = "https://api.thingspark.co.kr/update?apiKey=%s&%s=%s&%s=%s";
 
 // structure used by the libcurl write callback function
 struct url_data {
