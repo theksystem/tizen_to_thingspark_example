@@ -1,5 +1,5 @@
-#ifndef __things_H__
-#define __things_H__
+#ifndef __tizen2thingspark_H__
+#define __tizen2thingspark_H__
 
 
-#endif /* __things_H__ */
+#endif /* __TIZEN2THINGSPARK_H__ */
