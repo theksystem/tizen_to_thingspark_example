@@ -12,7 +12,6 @@ Eina_Bool _get_sensor_value(void *data) {
 	int ret = 0;
 	tp_handle_h handle = NULL;
 
-
 	// TODO API_KEY 변경
 	ret = tp_initialize("API_KEY", &handle);
 	retv_if(ret != 0, -1);
