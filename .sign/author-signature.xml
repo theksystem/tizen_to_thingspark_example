@@ -2,9 +2,9 @@
 <SignedInfo>
 <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></CanonicalizationMethod>
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
-<Reference URI="bin%2Fthings">
+<Reference URI="bin%2Fthingspark">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>Rp/yqQ4sAkt/+f+7dAGWD4Ayk6em1PzdeaVk4CCiS2c=</DigestValue>
+<DigestValue>klJHEkHIv/sEhuVgCcS+mhmU5BfmHCl2LrxjVPQKV2M=</DigestValue>
 </Reference>
 <Reference URI="shared%2Fres%2Fthings.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -12,7 +12,7 @@
 </Reference>
 <Reference URI="tizen-manifest.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>Hc+e7QAI6GKRnuxFki5/mtlilRWcpdtFCxlViuXNdp4=</DigestValue>
+<DigestValue>IDeqz5dU1Q32zMLdxP84hqCsKiDpk59xL7IaeZ+h8Bs=</DigestValue>
 </Reference>
 <Reference URI="#prop">
 <Transforms>
@@ -23,9 +23,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-vRIvqGf6IRDH00w04A1wpNHJQWNnc+trkDx9BPsQhReK3c8SgGRJQ8EVKD+H5HCuR9LwtEfPoTx1
-oPuif79Dh4ibwuuhLtTMTv2BnQwTbt7gl52OXY9fyAXtqwsNIvhQ9NQSNzC/TAOCErJ1fHd9RFam
-vaWw7FZsSRNTy6mbV6o=
+oo8F8nHzPDBh8NvscJ7mt8dI6RbW+0XEpfTKrp6g9eDx7sHwNodSmOODjQS/95WXlPd4+zVilwEH
+6TwQT5ZWpyqWLx/nHuf7QJ3Ca4kX962VagTEhB5LZQ92wilBYL8O35hqTGy5/OekbiXl53/PHIsB
+ndRvEKYsk4bsyDeQ40Y=
 </SignatureValue>
 <KeyInfo>
 <X509Data>
