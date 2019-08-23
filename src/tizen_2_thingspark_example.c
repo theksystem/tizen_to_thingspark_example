@@ -17,17 +17,16 @@
  ******************************************************************/
 
 /***********************************************************************
- Filename:   tizen2thingspark.c
+ Filename:   tizen_2_thingspark_example.c
  Author: theksystem
  ************************************************************************/
-
 
 
 #include <tizen.h>
 #include <service_app.h>
 #include <Ecore.h>
 #include <thingspark.h>
-#include <tizen2thingspark.h>
+#include <tizen_2_thingspark_example.h>
 #include "log.h"
 
 Ecore_Timer *timer = NULL;
@@ -39,7 +38,7 @@ Eina_Bool _get_sensor_value(void *data) {
 
 	// TODO API_KEY 변경
 	// thingspark.kr 에서 채널별로 부여되는 api-key를 입력합니다.
-	ret = tp_initialize("API_KEY", &handle);
+	ret = tp_initialize("----------", &handle);
 	retv_if(ret != 0, -1);
 
 	char s1[10];               // 변환한 문자열을 저장할 배열
@@ -53,7 +52,7 @@ Eina_Bool _get_sensor_value(void *data) {
 	ret = tp_set_field_value(handle, 1, s1);
 	retv_if(ret != 0, -1);
 
-	for (int i = 2; i < 11; i++) {
+	for (int i = 2; i < 5; i++) {
 		rdata = rand() % 100 + rand() % 100 / 100.0;
 		sprintf(s1, "%.2f", rdata);
 
@@ -74,6 +73,9 @@ bool service_app_create(void *data) {
 	// Todo: add your code here.
 
 	_D("===== start thingspark =====");
+
+	// Ecore_Timer* ecore_timer_add(double interval, Ecore_Task_Cb func, const void *data)
+	// 30초에 1번씩 _get_sensor_value 를 호출
 
 	timer = ecore_timer_add(30.0f, _get_sensor_value, NULL);
 	if (!timer)
