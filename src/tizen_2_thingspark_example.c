@@ -52,6 +52,7 @@ Eina_Bool _get_sensor_value(void *data) {
 	ret = tp_set_field_value(handle, 1, s1);
 	retv_if(ret != 0, -1);
 
+	/*
 	for (int i = 2; i < 5; i++) {
 		rdata = rand() % 100 + rand() % 100 / 100.0;
 		sprintf(s1, "%.2f", rdata);
@@ -59,6 +60,7 @@ Eina_Bool _get_sensor_value(void *data) {
 		ret = tp_set_field_value(handle, i, s1);
 		retv_if(ret != 0, -1);
 	}
+	*/
 
 	ret = tp_send_data(handle);
 	retv_if(ret != 0, -1);
