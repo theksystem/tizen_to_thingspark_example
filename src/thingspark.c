@@ -38,7 +38,9 @@
 #include "log.h"
 #include "thingspark.h"
 
-#define TRUE 1
+#include <json-glib/json-glib.h>
+
+
 #define MAXIMUM_FIELD 10
 
 // structure used by the libcurl write callback function
