@@ -7,6 +7,7 @@
     </service-application>
     <privileges>
         <privilege>http://tizen.org/privilege/alarm.get</privilege>
+        <privilege>http://tizen.org/privilege/internet</privilege>
         <privilege>http://tizen.org/privilege/peripheralio</privilege>
     </privileges>
 </manifest>
