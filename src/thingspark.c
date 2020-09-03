@@ -21,7 +21,7 @@
  Filename:   thingspark.c
  Author: theksystem
 
- send data to ThingsPark IoT Cloud server
+ send data to thingspark IoT Cloud server
 
  Uses libcurl to send the data via HTTP
 
